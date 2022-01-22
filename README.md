@@ -1,2 +1,1 @@
-# Javascript-Projects - My list of WSBD Modules
-1. CKIT-501:Computer Structures
+# Javascript-Projects - Programming the Internet using Javascript, HTML, CSS, PHP. Including Assignments and Project for Ora Porsperity Bank

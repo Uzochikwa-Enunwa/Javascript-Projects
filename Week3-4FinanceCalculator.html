@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ora Prosperity Bank - Finance Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="ora_css.css" type="text/css" rel="stylesheet">        
+    </head>
+    <body>
+    <div id="page">
+        <div id="logo">
+            <h1>Ora Prosperity Bank</h1>
+	</div>
+        <div class="nav">
+            <ul id="menu">
+		<li><a href="home.html">Home</a></li>
+		<li>
+			<a href="about.html">About Us</a>			
+		</li>
+		<li>
+			<a href="#">Products &#x2193;</a>
+			<ul class="hidden">
+				<li><a href="account.html">Account</a></li>
+				<li><a href="http://localhost:8383/Week%203%20Assignement%20Group%20Project/Personal%20Finance.html">Personal Finance</a></li>
+                                <li><a href="http://localhost:8383/Week%203%20Assignement%20Group%20Project/Ora%20Bank.html">Finance Calculator</a></li>				
+			</ul>
+		</li>
+		<li><a href="http://localhost:8383/Week%203%20Assignement%20Group%20Project/contactpage.html">Contact Us</a></li>
+	</ul>
+	</div>
+	<div class="content">
+            <h2>Finance Calculator</h2>
+            <p>
+		Finance Calculator
+            </p>
+            <p> 
+                Finance Calculator
+            </p>
+	</div>
+        <div class="mainGroupBody">
+                    <h1>Finance Calculator</h1>
+                <div class="middleGroupBody">    
+                    <form action="demoForm" class="calculator" id="MainGroup" method="post">
+                        <input name="MonthbyMonth" type="hidden">
+                        <p> 
+                           To provide you with information on how Ora Prosperity bank 
+                           will help to aid you financially so that you can meet your
+                           life ambitions and goals,we have created a financial calculator
+                        </p>
+                        <p>  
+                           Fill in the blank spaces below as this will enable us
+                           to determine the exact amount,duration and repayment cost 
+                           you will incur
+                        </p>
+                        <p>
+                           Please note that this is just to provide you with an estimate
+                           as our financial agents will determine the exact facility once you have 
+                           filled and submitted the form and required paperwork
+                        </p>  
+                <div class="groupFormBox">
+                    <div class="groupForm">
+                        <label for="changingdate">Beginning date</label>
+                        <input id="changingdate" name="changingdate" size="10" type="text">
+                    </div>
+                    <div class="groupForm">
+                        <label for="changingage">Age</label>
+                        <select id="changingage" name="changingage" onchange="Pickdropdown();">
+                            <option selected="selected" value="18">18 </option>
+                            <option value="19">19</option>
+                            <option value="19">20</option>
+                            <option value="19">21</option>
+                            <option value="19">22</option>
+                            <option value="19">23</option>
+                            <option value="19">24</option>
+                            <option value="19">25</option>
+                            <option value="19">26</option>
+                            <option value="19">27</option>
+                            <option value="19">28</option>
+                            <option value="19">29</option>
+                            <option value="19">30</option>
+                            <option value="19">31</option>
+                            <option value="19">32</option>
+                        </select>
+                    </div>        
+                <div class="groupForm">
+                        <label for="changingyears">Number of Years</label>
+                        <select id="changingyears" name="changingyears" onchange="Pickdropdown();">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                        </select>
+                </div>
+                <div class="groupForm">
+                        <label for="changingfacility">Facility Type</label>
+                        <select id="changingfacility" name="changingfacility" onchange="Pick();">
+                        </select>
+                </div>
+                <div class="groupForm">
+                        <label for="changingcustomer">Type of Customer</label>
+                        <select id="changingcustomer" name="changingcustomer">
+                            <option value="VIP">VIP Customer</option>
+                            <option value="ordinary">Ordinary Customer</option>
+                        </select>
+                </div>
+                <div class="groupForm">
+                        <label for="changingAmount">Loan Amount</label>
+                        <input id="changingAmount" name="changingAmount" size="10" type="text">
+                </div>
+                <div class="groupForm">
+                        <label for="changingCompany">Name of Company</label>
+                        <input id="changingCompany" name="changingCompany" size="10" type="text">
+                </div>
+                <div class="groupprepForm">
+                    <h2>
+                        <label for="payment">Monthly Estimated Payment:</label>
+                    </h2>
+                    <input id="payment" name="payment" readonly="readonly" size="12" type="text">
+                </div>
+                <div class="pregroupprepForm">
+                "Apply now"
+                <p><input type="submit" id="edit-submit" value="calculate"></p>
+                   <h3>Was this helpful?</h3>
+                   <input type = "radio" name = "SiteQuality" id = "SQ1" value =
+                    "5" /> <label for="SQ1"> Yes </label> <br />
+                   <input type = "radio" name = "SiteQuality" id = "SQ2" value =
+                    "4" /> <label for="SQ2"> No </label> <br />
+                </div>
+                </div>
+            </form>
+                </div>
+        <div class="rightGroupCol">
+           <div class="rightinfobox">
+               <h3>24 Hour Customer Service</h3>
+               <div class="rightinfoboxcontent">
+                   <p>We are available 24 hours a day,daily including weekends.</p>
+                   <h4>Call us on 0800-999999</h4>
+                   <p class="replyus">
+                       <a href="http://localhost:8383/Week%203%20Assignement%20Group%20Project/contactpage.html">Contact us</a>
+                   </p>
+               </div>
+           </div>
+        </div>
+        </div>
+	<div id="footer">
+            <hr>
+            <p>
+		&copy;2015 <a>Orange Team</a>
+            </p>
+	</div>
+    </div>
+    </body>
+</html>

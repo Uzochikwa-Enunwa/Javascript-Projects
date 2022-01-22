@@ -1,1 +1,1 @@
-# Javascript-Projects - Programming the Internet using Javascript, HTML, CSS, PHP. Including Assignments and Project for Ora Porsperity Bank
+# Javascript-Projects - Programming the Internet using Javascript, HTML, CSS and PHP. Including Assignments and Project for Ora Prosperity Bank

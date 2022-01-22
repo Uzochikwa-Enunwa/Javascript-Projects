@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Assignment table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css file for week 2 assignment.css"/>
+    </head>
+    <body>
+        <div id="floatleft">
+        <table id = "logicland" border="1">
+        <thead> 
+              <tr> 
+                   <th>Team</th>
+                   <th>Played</th>
+                   <th>Won</th>
+                   <th>Drawn</th> 
+                   <th>Lost</th>
+                   <th>Points</th>
+                   </tr>
+        </thead>
+        <tbody>
+              <tr>
+                   <td>City</td>
+                   <td>8</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>1</td>
+                   <td>17</td>
+              </tr>
+              <tr>
+                   <td>United</td>
+                   <td>8</td>
+                   <td>4</td>
+                   <td>2</td>
+                   <td>2</td>
+                   <td>14</td> 
+              </tr>
+              <tr>
+                   <td>Wanderers</td>
+                   <td>8</td>
+                   <td>3</td>
+                   <td>2</td>
+                   <td>3</td>
+                   <td>11</td> 
+              </tr>
+              <tr> 
+                   <td>Rangers</td>
+                   <td>8</td>
+                   <td>2</td>
+                   <td>2</td>
+                   <td>4</td>
+                   <td>8</td>
+              </tr>
+              <tr>
+                   <td>Town</td>
+                   <td>8</td>
+                   <td>1</td>
+                   <td>2</td>
+                   <td>5</td>
+                   <td>5</td>
+              </tr>
+        </tbody>
+        </table>
+        </div>
+        <p> Please answer the following questions about the table on the left. </p>
+        <form method = "post" action = "customer.php">
+        <fieldset>
+        <legend> Which team has got 11 points ?</legend>
+        <input type = "radio" name = "SiteQuality" id = "TEAM1" value =
+    "5" /> <label for="TEAM1"> City </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "TEAM2" value =
+    "4" /> <label for="TEAM2"> United </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "TEAM3" value =
+    "3" /> <label for="TEAM3"> Wanderers</label> <br />
+        <input type = "radio" name = "SiteQuality" id = "TEAM4" value =
+    "2" /> <label for="TEAM4"> Rangers </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "TEAM5" value =
+    "1" /> <label for="TEAM5"> Town </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "TEAM6" value =
+    "0" checked = "checked" /> <label for="TEAM6"> Question Not Answered
+        </label> <br />
+        </fieldset>
+        <fieldset>
+        <legend> How many games have Rangers won ?</legend>
+        <input type = "radio" name = "SiteQuality" id = "RANGERS1" value =
+    "5" /> <label for="RANGERS1"> 1 </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "RANGERS2" value =
+    "4" /> <label for="RANGERS2"> 2 </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "RANGERS3" value =
+    "3" /> <label for="RANGERS3"> 3 </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "RANGERS4" value =
+    "2" /> <label for="RANGERS4"> 4 </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "RANGERS5" value =
+    "1" /> <label for="RANGERS5"> 5 </label> <br />
+        <input type = "radio" name = "SiteQuality" id = "RANGERS6" value =
+    "0" checked = "checked" /> <label for="RANGERS6"> Question Not Answered
+        </label> <br />
+        </fieldset>
+        <fieldset>
+        <legend> Which teams have drawn two games ?</legend>
+        <input type = "checkbox" name = "ItemsOwned" id = "GAME1" value =
+    "laptop" /> <label for="GAME1"> City </label> <br />
+        <input type = "checkbox" name = "ItemsOwned" id = "GAME2" value =
+    "blackberry" /> <label for="GAME2"> United </label> <br />
+        <input type = "checkbox" name = "ItemsOwned" id = "GAME3" value =
+    "iphone" /> <label for="GAME3"> Wanderers </label> <br />
+        <input type = "checkbox" name = "ItemsOwned" id = "GAME4" value =
+    "ipad" /> <label for="GAME4"> Rangers </label> <br />
+        <input type = "checkbox" name = "ItemsOwned" id = "GAME5" value =
+    "labrador" /> <label for="GAME5"> Town </label> <br />
+        </fieldset>
+        </form>
+        <fieldset>
+        <legend> Tell us what you thought about the quiz ?</legend>
+        <p>
+            <textarea id="MyTextArea" rows="4" cols="58"></textarea>
+        </p>
+        </fieldset>
+        <form method = "post" action = "customer.php">
+    <p>
+        <input type = "submit" name = "submit" value =
+        "Submit" />
+        <input type = "reset" value = "Clear" />
+    </p>
+        </form>
+    </body>
+</html>
